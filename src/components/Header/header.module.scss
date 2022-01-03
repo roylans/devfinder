@@ -1,4 +1,15 @@
 .header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+
+.header__title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+// .header__toggle{}

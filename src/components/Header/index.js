@@ -22,14 +22,14 @@ export function Header(props) {
 
   return (
     <header className={ style.header }>
-      <p>Click para cambiar el tema</p>
-      <label>
-      <input
-        type="checkbox"
-        defaultChecked={checked}
-        onChange={() => toggleThemeChange()}
-      />
-      </label>
+      <div className={ style.header__title }>DevFinder</div>
+      <div className={ style.header__toggle }>
+        <input
+          type="checkbox"
+          defaultChecked={checked}
+          onChange={() => toggleThemeChange()}
+        />
+      </div>
     </header>
   )
 }
