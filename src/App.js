@@ -24,7 +24,6 @@ function App() {
     }
   }
 
-
   return (
     <ThemeContext.Provider value={{ darkTheme, toggleTheme }}>
     <div className="container">

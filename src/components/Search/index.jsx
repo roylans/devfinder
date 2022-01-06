@@ -1,12 +1,14 @@
+import { useContext } from 'react'
+import { ThemeContext } from '../../context/theme'
 import style from './search.module.scss'
 
 export function Search(props) {
+  const { darkTheme } = useContext(ThemeContext)
   return (
     <div className={style.search}>
       <div className={style.wrapper}>
-        <div className={style.wrapper__input}>
+        <div className={`${style.wrapper__input} ${!darkTheme ? style.wrapper__input_dark : style.wrapper__input_light}`}>
           <input
-            className={style.wrapper__input}
             type="text"
             placeholder='Search Github username...'
           />
@@ -16,6 +18,6 @@ export function Search(props) {
         </div>
 
       </div>
-    </div>
+    </div >
   )
 }

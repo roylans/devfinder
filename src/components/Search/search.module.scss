@@ -13,23 +13,35 @@
 
 .wrapper__input{
     padding: 5px;
-    border: none;
     background-color: var(--surface-color);
-    font-size: 1.2rem;
-    outline: none;
     margin-left: 15px;
-    
 }
 
 .wrapper__input::before{
     content: '';
-    background: url('../../assets/images/search.svg') no-repeat;
-    position: rela;
     position: absolute;
     height: 30px;
     width: 25px;
     margin-left: -20px;
     margin-top: 4px;
+}
+
+.wrapper__input_light:before{
+    background: url('../../assets/images/search_light.svg') no-repeat;
+}
+
+.wrapper__input_dark:before{
+    background: url('../../assets/images/search_dark.svg') no-repeat;
+}
+
+.wrapper__input input{
+    padding: 5px;
+    border: none;
+    background-color: var(--surface-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    outline: none;
+    margin-left: 15px;
 }
 
 .wrapper__btn{
