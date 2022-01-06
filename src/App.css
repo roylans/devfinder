@@ -1,17 +1,21 @@
 /* Variables de color si el tema es nulo o light */
 html {
-  --primary-color: #282c34;
-  --secondary-color: #fff;
+  --background-color: #fff;
+  --surface-color: #eee;
+  --primary-color: #121212;
+  --secondary-color: #191919;
   }
   
 /* Variables de color si el tema es dark */
 html[data-theme="dark"] {
-  --primary-color: #fff;
-  --secondary-color: #282c34;
+  --background-color: #0F0E0E;
+  --surface-color: #191919;
+  --primary-color: #ffffff;
+  --secondary-color: #79018C;
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   color: var(--primary-color);
 }
 
@@ -32,7 +36,7 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .container {
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 1rem;
   }
