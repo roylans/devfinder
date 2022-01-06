@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+
 import { Header } from './components/Header'
 import { Search } from './components/Search'
+import { Profile } from './components/Profile'
 
 import { ThemeContext } from './context/theme'
+
+import './App.css'
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(localStorage.getItem("theme") === "dark" ? true : false)
@@ -29,6 +32,7 @@ function App() {
     <div className="container">
       <Header/>
       <Search/>
+      <Profile/>
     </div>
     </ThemeContext.Provider>
   );
